@@ -1,12 +1,14 @@
+setTimeout(getVariable, 5000);
+
 function getVariable() {
     let inputData = $('#upperCase').val();
-    printRes(upperCase(inputData));
+    getPrintRes(getUpperCase(inputData));
 }
 
 
-function upperCase(variable) {
+function getUpperCase(variable) {
     return variable.toUpperCase();
 }
-function printRes(readyString) {
+function getPrintRes(readyString) {
     $('#place-for-print').html(readyString);
 }
